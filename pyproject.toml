@@ -55,7 +55,7 @@ dev = [
 package = true
 
 [tool.uv.sources]
-fntypes = { git = "https://github.com/timoniq/fntypes.git", rev = "master" }
+fntypes = { git = "https://github.com/timoniq/fntypes.git", rev = "main" }
 
 [tool.ruff]
 line-length = 150
