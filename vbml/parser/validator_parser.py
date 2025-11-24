@@ -5,7 +5,7 @@ import re
 import typing
 from collections.abc import Callable
 
-from fntypes.library.monad.result import Error, Ok, Result
+from kungfu.library.monad.result import Error, Ok, Result
 
 from vbml.misc import flatten
 from vbml.parser.argument_parser import Argument

@@ -4,9 +4,9 @@ import dataclasses
 import typing
 from collections import deque
 
-from fntypes.library.monad.option import Nothing, Option, Some
-from fntypes.library.monad.result import Error, Ok, Result
-from fntypes.library.unwrapping import unwrapping
+from kungfu.library.monad.option import Nothing, Option, Some
+from kungfu.library.monad.result import Error, Ok, Result
+from kungfu.library.unwrapping import unwrapping
 
 import vbml.parser.argument_parser
 from vbml.parser.argument_parser import (

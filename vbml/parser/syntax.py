@@ -6,8 +6,8 @@ import typing
 from collections.abc import Callable
 from functools import cached_property, wraps
 
-from fntypes.library.monad.option import Nothing, Option, Some
-from fntypes.library.monad.result import Error, Ok, Result
+from kungfu.library.monad.option import Nothing, Option, Some
+from kungfu.library.monad.result import Error, Ok, Result
 
 type SyntaxResult = Result[SyntaxPattern, str]
 type SyntaxHandler = Callable[[Argument], SyntaxResult]

@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import typing
 
-from fntypes.library.misc import is_err, is_ok
-from fntypes.library.monad.option import Nothing
+from kungfu.library.misc import is_err, is_ok
+from kungfu.library.monad.option import Nothing
 
 from vbml.error import ParseError
 from vbml.patcher.abc import ABCPatcher

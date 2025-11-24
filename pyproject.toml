@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "vbml"
+name = "vbml2"
 description = "Markup language that compiles to regex."
 authors = [{ name = "timoniq", email = "tesseradecades@mail.ru" }]
 requires-python = ">=3.13,<4.0"
@@ -32,7 +32,7 @@ classifiers = [
     "Topic :: Software Development :: Quality Assurance",
     "Typing :: Typed",
 ]
-dependencies = ["fntypes"]
+dependencies = ["kungfu"]
 
 [project.urls]
 Source = "https://github.com/tesseradecade/vbml"
@@ -41,21 +41,24 @@ Documentation = "https://github.com/tesseradecade/vbml/blob/master/docs/index.md
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.2.0,<5",
-    "ruff>=0.12.1,<1",
-    "basedpyright>=1.29.4,<2",
+    "pre-commit>=4.5.0,<5",
+    "ruff>=0.14.6,<1",
+    "basedpyright>=1.34.0,<2",
     "sort-all>=1.3.0,<2",
-    "pytest>=8.4.1,<9",
-    "pytest-asyncio>=1.0.0,<2",
-    "pytest-cov>=6.2.1,<7",
-    "pytest-mock>=3.14.1,<4",
+    "pytest>=9.0.1,<10",
+    "pytest-asyncio>=1.3.0,<2",
+    "pytest-cov>=7.0.0,<8",
+    "pytest-mock>=3.15.1,<4",
 ]
 
 [tool.uv]
 package = true
 
 [tool.uv.sources]
-fntypes = { git = "https://github.com/timoniq/fntypes", rev = "main" }
+kungfu = { git = "https://github.com/timoniq/kungfu", rev = "main" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["vbml"]
 
 [tool.ruff]
 line-length = 150

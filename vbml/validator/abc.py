@@ -1,7 +1,7 @@
 import abc
 import typing
 
-from fntypes.library.monad.result import Wrapped
+from kungfu.library.monad.result import Wrapped
 
 type ValidatorResult = Wrapped[typing.Any] | typing.Any | None
 
