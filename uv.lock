@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13, <4.0"
 
 [[package]]
@@ -84,7 +84,7 @@ wheels = [
 [[package]]
 name = "fntypes"
 version = "0.2.1"
-source = { git = "https://github.com/timoniq/fntypes.git#3a0a3cd1041402e70773dab80388a68596f7281a" }
+source = { git = "https://github.com/luwqz1/kungfu?rev=types#c5b67ea549fde18e2ba9f294d69e5fe7b926ae6d" }
 dependencies = [
     { name = "typing-extensions" },
 ]
@@ -331,7 +331,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fntypes", git = "https://github.com/timoniq/fntypes.git" }]
+requires-dist = [{ name = "fntypes", git = "https://github.com/luwqz1/kungfu?rev=types" }]
 
 [package.metadata.requires-dev]
 dev = [
